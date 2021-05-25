@@ -49,9 +49,9 @@ export default function CreateOrphanage() {
     data.append('open_on_weekends', String(openOnWeekends))
     data.append('latitude', String(selectedPosition.lat))
     data.append('longitude', String(selectedPosition.lng))
-    images.map((image) => {
+    images.map((image) => 
       data.append('images', image)
-    })
+    )
 
     await getFromAPI.post('orphanages', data)
     alert('Cadastro realizado com sucesso!')
