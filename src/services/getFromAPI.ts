@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const getFromAPI = axios.create({
-    baseURL: 'http://localhost:3333'
+    baseURL: 'https://find-happy-api.herokuapp.com/'
 })
 
 export default getFromAPI
